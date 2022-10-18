@@ -1,5 +1,8 @@
 const N = 8;
 
+setInterval(updateBoard, 10000);
+  
+
 function advanceTime() {
   updateBoard();
 }
