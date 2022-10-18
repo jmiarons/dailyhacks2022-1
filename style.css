@@ -1,13 +1,22 @@
+.mainPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .board {
+  float: left;
   width: min-content;
-  margin: 20px;
-  border: 10px solid #333;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 5px solid #333;
   border-radius: 6px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .row {
@@ -22,6 +31,8 @@
   height: 80px;
   font-size: 50px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   display: flex;
   border: 1px solid #333;
   background-color: #a6e3a1;
@@ -36,6 +47,8 @@
   height: 80px;
   font-size: 50px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   display: flex;
   border: 1px solid #333;
   background-color: #eba0ac;
@@ -43,4 +56,60 @@
 
 .dead::before {
   content: "☠️";
+}
+
+.buttonNextMove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.buttonStyle {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #1e1e2e;
+  box-sizing: border-box;
+  color: #1e1e2e;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #1e1e2e;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttonStyle:focus {
+  color: #171e29;
+}
+
+.buttonStyle:hover {
+  border-color: #74c7ec;
+  color: #74c7ec;
+  fill: #74c7ec;
+}
+
+.buttonStyle:active {
+  border-color: #74c7ec;
+  color: #74c7ec;
+  fill: #74c7ec;
+}
+
+@media (min-width: 768px) {
+  .buttonStyle {
+    min-width: 170px;
+  }
 }
