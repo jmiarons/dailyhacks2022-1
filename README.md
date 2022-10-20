@@ -16,3 +16,9 @@ Per generar els taulells es fa de forma aleatòria, it ain't much but it's hones
 Que es pugui posar una llavor d'una forma més sofisticada al front-end i que no estigui hard-coded.
 
 Fer més maco el front-end, no sóc un expert i ja ha costat molt que estigui tot alineat.
+
+## Play game
+- Clone repository
+- Open `index.html`
+- Wait 10s or click Next move
+- Enjoy the seed
